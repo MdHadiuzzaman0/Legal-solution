@@ -12,13 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="">
-    <section class="max-w-[1170px] mx-auto">
+<body>
+<section class="max-w-[1170px] mx-auto">
 
-    <header class="flex items-center justify-evenly my-[50px]">
+    <header class="flex items-center justify-between my-12">
         <img src="./images/logo2.png" alt="">
 
-        <ul class="flex gap-10 text-[19px] text-[#707070] mx-[100px]">
+        <ul class="hidden lg:flex gap-10 text-[19px] text-[#707070] mx-[100px]">
             <li>Home</li>
             <li>Services <i class="fa-solid fa-chevron-right"></i></li>
             <li>Cases <i class="fa-solid fa-chevron-right"></i></li>
@@ -46,7 +46,7 @@
         <p class="mb-8 text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
     </section>
 
-    <section class="practiceCard grid grid-cols-3 mb-25 text-center">
+    <section class="practiceCard grid grid-cols-2 lg:grid-cols-3 mb-25 text-center">
         <div class="flex flex-col items-center px-15 py-10 space-y-8 shadow-sm hover:bg-[linear-gradient(to_top,#ffffff,#f3f3f3)]">
            <img src="./images/business.png">
            <h3 class="text-3xl font-extrabold text-[#414040]">Business Law</h3>
@@ -101,7 +101,7 @@
         <p class="leading-7 mb-8 text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
     </section>
 
-    <section class="clientImg bg-[url('./images/Rectangle5.png'),url('./images/banner.png')] bg-no-repeat bg-center bg-size-[cover,cover] mb-25 text-center text-amber-50 flex flex-col items-center max-w-[1170px] px-23 py-32">
+    <section class="clientImg bg-[url('./images/Rectangle5.png'),url('./images/banner.png')] bg-no-repeat bg-center bg-size-[cover,cover] mb-25 text-center text-amber-50 flex flex-col items-center max-w-[1170px] py-32">
 
         <img src="./images/Ellipse 1.png" class="mb-10">
 
@@ -109,12 +109,12 @@
         <span class="text-xl font-normal leading-7 mb-8">UX Designer</span>
         </h3>
 
-        <div class="flex gap-[1022px]">
+        <div class="flex justify-between w-full px-3">
         <i class="fa-solid fa-angle-left"></i>
         <i class="fa-solid fa-angle-right"></i>
         </div>
 
-        <p class="leading-7 mb-8">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+        <p class="leading-7 mb-8 max-w-200 md:max-w-250 px-23 ">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
     </section>
 
     <section class="ques max-w-[790px] mx-auto text-center mb-16">
@@ -123,7 +123,7 @@
     </section>
     
     <section class="quesImg flex justify-between mb-25">
-        <div class="max-w-[571px] space-y-8 text-xl font-extrabold mb-4 text-[#414040]">
+        <div class="min-w-[571px] px-3 space-y-8 text-xl font-extrabold mb-4 text-[#414040]">
 
             <div class="p-8 bg-[#F3F3F3] rounded-xl">
                <div class="flex items-center justify-between mb-4">
@@ -150,7 +150,7 @@
             
         </div>
 
-        <div>
+        <div class="hidden min-w-[571px] lg:block">
             <img src="./images/faq.png" alt="">
         </div>
 
@@ -161,8 +161,8 @@
         <p class="leading-7 text-[#707070]">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
     </section>
 
-    <section class="contactCard flex justify-evenly mb-25 gap-4">
-        <div class="grid grid-cols-2">
+    <section class="contactCard flex flex-col-reverse lg:flex-row items-center justify-evenly mb-25 gap-4">
+        <div class="max-w-[750px] grid grid-cols-2 px-19 lg:px-0">
 
             <div class="text-center p-16 space-y-3 bg-[#F3F3F3] border-r-2 border-r-[#CFCFCF] hover:bg-[#CFCFCF]/50">
                 <img src="./images/location.png" class="ml-15">
@@ -191,7 +191,7 @@
             </div>
         </div>
 
-        <div class="max-w-[570px] flex flex-col gap-6 leading-7 text-[#707070]">
+        <div class="max-w-[570px] mx-auto flex flex-col gap-6 leading-7 text-[#707070] mb-15 lg:mb-0">
             <input class=" px-7 py-7 rounded-xl bg-[#F3F3F3]" type="text" placeholder="Your Name">
 
             <input class=" px-7 py-7  rounded-xl bg-[#F3F3F3]" type="email" name="" placeholder="Your Email">
@@ -203,16 +203,17 @@
             <button class="text-[20px] text-white px-[30px] py-[18px] bg-[#B68C5A] rounded-2xl hover:bg-orange-900">Send Message</button>
         </div>
     </section>
-    </section>
+  
+</section>
 
-    <footer class="max-w-[1570px] mx-auto bg-black text-white flex gap-20 px-51 py-50">
+    <footer class="max-w-[1770px] mx-auto bg-black text-white grid grid-cols-2 lg:grid-cols-4 gap-20 px-51 py-30">
         <div class="max-w-[259px]">
             <img src="./images/logo.png" alt="" class="mb-8">
             <p class="leading-7 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         </div>
 
-        <div class="max-w-[127px]">
-            <h3 class="mb-12 text-2xl">Useful Link</h3>
+        <div class="max-w-[127px] pl-12">
+            <h3 class="mb-12 text-2xl"> Link</h3>
             <div class="leading-7 text-[#E7E7E7]">
                 <p>Home</p>
                 <p>About Us</p>
@@ -222,7 +223,7 @@
             </div>
         </div>
 
-        <div class="max-w-[216px]">
+        <div class="max-w-[200px]">
             <h3 class="mb-12 text-2xl">Contact Now</h3>
             <div class="class=leading-7 text-[#E7E7E7] flex flex-col gap-[16px]">
             <p>555 4th 5t NW, Washington <br>
