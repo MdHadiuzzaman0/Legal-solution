@@ -4,7 +4,7 @@ A high-end legal services landing page meticulously crafted using **Tailwind CSS
 <br><br>
 <h3>🚀 Live Preview</h3>
 
-Deployment: https://mdhadiuzzaman0.github.io/Legal_Solution/
+Deployment: https://mdhadiuzzaman0.github.io/Legal-solution/
 <br><br>
 <h3>🛠️ Tailwind Highlights: (Tailwind Mastery)</h3>
 
